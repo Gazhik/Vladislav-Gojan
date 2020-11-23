@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("../fonts/OpenSans-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("../fonts/OpenSans-Semibold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+@media screen and (max-width: 992px)
+{
+ 
+  .row-item
+  {
+    width: 45%;
+  }
+  .icon 
+  {
+ display: flex;
+ margin: auto 0;
+ color: white;
+ padding: 5px 10px;
+ cursor: pointer;
+ border: 1px solid white;
+ border-radius: 4px;
+ font-size: 20px;
+  }
+  nav li
+ {
+ display: none;
+ padding: 15px 0;
+ }
+ .portfolio-item
+ {
+ width: 50%;
+ }
+ul
+{
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #2d2f31;
+  height: 0px;
+  top: 57px;
+  transform: all 250ms ease-in-out;
+  flex-direction: column;
+}
+.responsive ul
+{
+  height: 200px;
+}
+.responsive li
+{
+  display: inline-block;
+}
+}
+@media  screen and (max-width: 768px) { .container-row{
+  flex-direction: column;
+}
+  .row-item{
+    width: unset;
+  }
+}
+@media screen and (max-width: 576px) {
+ .portfolio-item { width: 100%; }
+ .contact-form .col:nth-child(odd)
+ {
+  border: 1px solid #afafaf; 
+ }
+ .contact-form .col
+ {
+  width: 100%;
+  margin-bottom: 15px;
+ }
+ .contact-form. .submit
+ {
+  font-size: 14px;
+ }
+}

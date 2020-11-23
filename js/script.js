@@ -1,0 +1,50 @@
+window.onload= function()
+{
+	const hamburger = document.getElementById('hamburger');
+	hamburger.onclick = function()
+	{
+		let topNav = document.getElementById('myTopnav');
+		if (topNav.className === 'responsive')
+		{
+			topNav.className = '' ;
+		}
+		else
+		{
+			topNav.className = 'responsive' ;
+		}
+		const menuList = document.querySelectorAll('.menu-element');
+		menuList.forEach (function(element)
+		{
+			element.addEventListener('click',function(event)
+			{
+				event.preventDefault();
+				const elementLink = element.dataset.link;
+				document.getElementById(elementLink).scrollIntoView({behavior:'smooth'});
+			});
+		});
+	}
+}
+const myTopnav = document.getElementById('myTopnav');
+	myTopnav.onclick = function()
+	{
+		let topNav = document.getElementById('myTopnav');
+		if (topNav.className === 'responsive')
+		{
+			topNav.className = '' ;
+		}
+		else
+		{
+			topNav.className = 'responsive' ;
+		}
+		const menuList = document.querySelectorAll('.menu-element');
+		menuList.forEach (function(element)
+		{
+			element.addEventListener('click',function(event)
+			{
+				event.preventDefault();
+				const elementLink = element.dataset.link;
+				document.getElementById(elementLink).scrollIntoView({behavior:'smooth'});
+			});
+		});
+	}
+
